@@ -33,6 +33,16 @@ while ( have_posts() ) : the_post(); ?>
         endwhile;
         endif;
         ?>
+
+        <?php if ( is_front_page() ) : ?>
+            <section class="image-portal-banner">
+                <p>Explore historical materials related to social reform and social welfare through the Image Portal.</p>
+                <a href="http://images.socialwelfare.library.vcu.edu">Image Portal</a>
+            </section>
+
+            <?php get_template_part( 'library/templates/home-featured' ); ?>
+        <?php endif; ?>
+
     </section>
 
 </article> <?php // end article ?>

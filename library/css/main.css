@@ -453,6 +453,29 @@ body {
   .entry-content:after {
     clear: both; }
 
+.featured-items {
+  text-align: center; }
+
+.featured-item {
+  width: 31.0344827586%;
+  float: left; }
+  .featured-item:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0; }
+  .featured-item:nth-child(3n + 2) {
+    margin-left: 34.4827586207%;
+    margin-right: -100%;
+    clear: none; }
+  .featured-item:nth-child(3n + 3) {
+    margin-left: 68.9655172414%;
+    margin-right: -100%;
+    clear: none; }
+  .featured-item img {
+    display: block;
+    margin: 0 auto; }
+
 /*********************
 LINK STYLES
 *********************/
@@ -465,6 +488,42 @@ a, a:visited {
     color: #1a1919; }
   a:link, a:visited:link {
     -webkit-tap-highlight-color: #1a1919; }
+
+.image-portal-banner {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px 35px;
+  display: block;
+  margin: 35px 0;
+  color: #fff;
+  zoom: 1; }
+  .image-portal-banner:before, .image-portal-banner:after {
+    content: "";
+    display: table; }
+  .image-portal-banner:after {
+    clear: both; }
+  .image-portal-banner p {
+    width: 74.1379310345%;
+    float: left;
+    margin-right: 3.4482758621%;
+    margin: 0;
+    line-height: 3.80; }
+  .image-portal-banner a {
+    width: 22.4137931034%;
+    float: right;
+    margin-right: 0;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: solid 2px #fff;
+    padding: 20px 0;
+    transition: background .25s ease-in-out, color .25s ease-in-out; }
+    .image-portal-banner a:hover, .image-portal-banner a:focus {
+      background: #fff;
+      color: #000; }
+
+.featured-item a {
+  text-decoration: none; }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -523,6 +582,14 @@ HEADER STYLES
 
 .inner-header {
   position: relative; }
+
+.featured-header {
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px; }
+  .featured-header h3 {
+    margin: 5px 0; }
 
 /*********************
 NAVIGATION STYLES

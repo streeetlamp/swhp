@@ -7,10 +7,20 @@ Navigation:
   ☐ 
 
 Homepage:
-  ☐ Home Slider - wallop.js & hammer
-  ☐ Featured Content Blocks
+  ✔ Home Slider - wallop.js & hammer @done (17-09-13 13:30)
+    ☐ Needs more fields for desc., title, etc 
+  ✔ Featured Content Blocks @done (17-09-13 16:03)
+    ☐ Will need finesse and double checking this flow is correct
+  ✔ Background Image and Button for Image Portal @done (17-09-13 15:20)
+    ☐ Still needs the background image and logo on button
 
 Footer:
   ☐ Pages menu
   ☐ Required Content
   ☐ Logos and General style
+
+General:
+  ✔ Replace VCUarts Logo in Themes Preview @done (17-09-13 14:48)
+
+Media:
+  ☐ Seems not all media got imported (http://swhtest.rampages.us/wp-admin/upload.php?mode=list&paged=24)
