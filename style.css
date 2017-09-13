@@ -1,0 +1,24 @@
+/*
+Theme Name: SWHP WP Theme
+Theme URI: socialwelfare.library.vcu.edu
+Description: WordPress Theme for the Social Welfare History Project
+Author: VCU Libraries Digital Engagement
+Author URI: http://library.vcu.edu
+Tags: fluid-layout, responsive-layout, accessibility-ready
+Version: 1.0.10
+
+GitHub Theme URI: https://github.com/streeetlamp/bare-wp
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+*/
+
+.sticky {}          /* DO NOT EDIT THIS */
+.gallery-caption {} /* THESE ARE USELESS */
+.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+.wp-caption {}
+.wp-caption-text {}
+.screen-reader-text {} 
+.alignleft {} 
+.alignright {} 
+.aligncenter {} /* THANK YOU */
