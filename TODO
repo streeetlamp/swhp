@@ -3,8 +3,9 @@ SWHP WP THEME:
 **Install https://github.com/aziz/PlainTasks in Sublime for this to be more useful**
 
 Navigation:
-  ☐ Main menu nav dropdowns should uh work 
-  ☐ 
+  ✔ Main menu nav dropdowns should uh work @done (17-09-14 12:41)
+    ✔ Dropdowns should stay visible when hovering them @done (17-09-19 11:34)
+    ☐ Menu items without dropdowns should be obvious somehow or opposite 
 
 Homepage:
   ✔ Home Slider - wallop.js & hammer @done (17-09-13 13:30)
@@ -15,12 +16,13 @@ Homepage:
     ☐ Still needs the background image and logo on button
 
 Footer:
-  ☐ Pages menu
+  ✔ Pages menu @done (17-09-19 11:44)
   ☐ Required Content
   ☐ Logos and General style
 
 General:
   ✔ Replace VCUarts Logo in Themes Preview @done (17-09-13 14:48)
+  ✔ Fix Search placement @done (17-09-14 16:52)
 
 Media:
-  ☐ Seems not all media got imported (http://swhtest.rampages.us/wp-admin/upload.php?mode=list&paged=24)
+  ✔ Seems not all media got imported (http://swhtest.rampages.us/wp-admin/upload.php?mode=list&paged=24) @done (17-09-19 11:44)

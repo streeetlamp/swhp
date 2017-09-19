@@ -30,9 +30,9 @@ function bones_head_cleanup() {
 	add_filter( 'style_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 	// remove Wp version from scripts
 	add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
-  // emoji's actually suck
-  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+    // emoji's actually suck
+    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+    remove_action( 'wp_print_styles', 'print_emoji_styles' );
 } /* end bones head cleanup */
 
 
@@ -162,7 +162,8 @@ function bones_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
-			'main-nav' => __( 'The Main Menu', 'bonestheme' ),
+            'main-nav' => __( 'The Main Menu', 'bonestheme' ),
+			'footer-nav' => __( 'The Footer Menu', 'bonestheme' ),
           )
        );
 } /* end bones theme support */

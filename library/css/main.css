@@ -570,15 +570,16 @@ HEADER STYLES
   float: right;
   margin-right: 0;
   text-align: right;
-  position: absolute;
-  bottom: 100px;
-  right: 40px; }
+  position: relative;
+  right: 0;
+  top: 70px; }
   .search input {
     background: #f4f4f4;
     border: none;
     padding: 10px 15px;
     width: 50%;
-    font-size: .8em; }
+    font-size: .8em;
+    outline: none; }
 
 .inner-header {
   position: relative; }
@@ -594,10 +595,14 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
+.main-nav {
+  padding: 0;
+  margin: 0; }
+
 .nav {
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
@@ -606,26 +611,55 @@ NAVIGATION STYLES
   float: left;
   margin-left: 0;
   margin-right: 0;
+  position: relative;
+  zoom: 1;
   /* end .nav li */
   /* highlight current page */ }
+  .nav:before, .nav:after {
+    content: "";
+    display: table; }
+  .nav:after {
+    clear: both; }
   @media (min-width: 769px) {
     .nav li {
-      display: inline-block; } }
+      display: inline-block;
+      height: 60px; } }
   .nav li a {
     display: block;
     text-decoration: none;
-    margin: 0.5em 0.75em;
-    border-bottom: 1px solid transparent; }
+    border-bottom: 1px solid transparent;
+    padding: 1.155em .75em 0 .75em; }
     .nav li a:hover, .nav li a:focus {
       border-bottom: 1px solid #ccc; }
   .nav li:first-child a {
-    margin-left: 0; }
+    padding-left: 0; }
   .nav li ul.sub-menu,
   .nav li ul.children {
-    display: none; }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
+    display: none;
+    border-top: 1px solid #000;
+    margin-top: 17px; }
+    .nav li ul.sub-menu li,
+    .nav li ul.children li {
+      height: auto; }
+      .nav li ul.sub-menu li a,
+      .nav li ul.children li a {
+        display: inline-block;
+        padding: 0 40px; }
+  .nav li:hover ul.sub-menu,
+  .nav li:hover ul.children, .nav li:focus ul.sub-menu,
+  .nav li:focus ul.children {
+    padding: 10px 0 15px 0;
+    background: #fff;
+    display: block;
+    z-index: 99;
+    text-transform: none;
+    position: absolute;
+    left: 0; }
+    .nav li:hover ul.sub-menu a,
+    .nav li:hover ul.children a, .nav li:focus ul.sub-menu a,
+    .nav li:focus ul.children a {
+      font-size: 0.90em;
+      padding: .2em .45em; }
 
 /* end .nav */
 .pagination, .wp-prev-next {
@@ -678,12 +712,16 @@ NAVIGATION STYLES
 FOOTER
 *********************/
 .footer {
-  zoom: 1; }
+  zoom: 1;
+  background: #000;
+  color: #fff; }
   .footer:before, .footer:after {
     content: "";
     display: table; }
   .footer:after {
     clear: both; }
+  .footer a {
+    color: #fff; }
 
 /*********************
 SLIDER STYLES
