@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: VCUarts
- * URL: http://arts.vcu.edu
+ * Author: VCU Libraries Digital Engagement
+ * URL: https://library.vcu.edu
  *
- * @package VCUarts_Bones_WP
+ * @package VCU_Libraries_WP
  */
 
 ?>
@@ -27,9 +27,22 @@
           )); ?>
         </nav>
 
+        <div class="img-portal">
 
-       <p class="source-org copyright">&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.</p>
-       <p class="last-modified">Last modified: <?php the_modified_time( 'F j, Y' ); ?></p>
+            <h4>More</h4>
+            <p>Explore historical materials related to the history of social reform at 
+VCU Libraries’ Image Portal.</p>
+            <a href="http://images.socialwelfare.library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?></a>
+        </div>
+
+        <div class="footer-creds">
+            <a href="https://library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/vcu-footer-logo.svg' ); ?></a>
+        
+            <p class="source-org copyright">&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.</p>
+            <p class="last-modified"><small>Last modified: <?php the_modified_time( 'F j, Y' ); ?></small></p>
+
+            <p class="editor-login"><a href="<?php echo esc_url( admin_url() ); ?>">Editor Login</a></p>
+        </div>
    </div>
 
 </footer>

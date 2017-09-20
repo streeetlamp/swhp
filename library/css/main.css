@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /******************************************************************
-Site Name: VCUarts
-Author: VCUarts Web Dev Team
+Site Name: Social Welfare History Project
+Author: VCU Libraries Digital Engagement Web Dev Team
 Stylesheet: Main Stylesheet
 ******************************************************************/
 /*********************
@@ -708,20 +708,52 @@ NAVIGATION STYLES
 .wp-prev-next .next-link {
   float: right; }
 
+.footer-nav {
+  width: 31.0344827586%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
 /*********************
 FOOTER
 *********************/
 .footer {
   zoom: 1;
   background: #000;
-  color: #fff; }
+  color: #fff;
+  padding: 40px 0; }
   .footer:before, .footer:after {
     content: "";
     display: table; }
   .footer:after {
     clear: both; }
   .footer a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; }
+    .footer a:focus, .footer a:hover {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
+
+.img-portal {
+  width: 31.0344827586%;
+  float: left;
+  margin-right: 3.4482758621%; }
+  .img-portal a {
+    display: inline-block; }
+  .img-portal svg {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    display: block; }
+
+.footer-creds {
+  width: 31.0344827586%;
+  float: right;
+  margin-right: 0; }
+  .footer-creds svg {
+    width: 100%;
+    max-width: 200px;
+    height: auto; }
 
 /*********************
 SLIDER STYLES

@@ -1,5 +1,5 @@
 /*
- * Author: VCUarts
+ * Author: VCU Libraries Digital Engagement
  *
  * javascripting all the things
 */

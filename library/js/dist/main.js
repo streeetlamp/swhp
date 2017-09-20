@@ -2693,7 +2693,7 @@ if (typeof define == TYPE_FUNCTION && define.amd) {
 
 }(this));
 /*
- * Author: VCUarts
+ * Author: VCU Libraries Digital Engagement
  *
  * javascripting all the things
 */

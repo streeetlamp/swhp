@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: VCUarts
- * URL: http://arts.vcu.edu
+ * Author: VCU Libraries Digital Engagement
+ * URL: https://library.vcu.edu
  *
- * @package VCUarts_Bones_WP
+ * @package VCU_Libraries_WP
  */
 
 ?>
@@ -40,7 +40,7 @@
     <title><?php wp_title( '' ); ?></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- NEED A favicon made -->
     <link rel="icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.png' ); ?>">
     <!--[if IE]>
       <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico' ); ?>">
