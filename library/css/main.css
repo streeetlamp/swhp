@@ -755,6 +755,19 @@ FOOTER
     max-width: 200px;
     height: auto; }
 
+.bottom-footer {
+  text-align: center;
+  color: #0966a9; }
+  .bottom-footer li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif; }
+  .bottom-footer a {
+    color: #0966a9;
+    display: inline-block;
+    text-decoration: none; }
+
 /*********************
 SLIDER STYLES
 *********************/

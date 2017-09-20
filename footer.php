@@ -47,6 +47,18 @@ VCU Libraries’ Image Portal.</p>
 
 </footer>
 
+<footer class="bottom-footer">
+    <div class="inner-footer">
+    
+        <ul>
+            <li><a href="http://vcu.edu">Virginia Commonwealth University</a></li>
+            <li><a href="https://library.vcu.edu">VCU Libraries</a></li>
+            <li><a href="https://www.library.vcu.edu/about/guidelines/copyright-privacy/">VCU Libraries Copyright & Privacy Policy</a></li>
+        </ul>
+
+    </div>
+</footer>
+
 </div>
 
 <?php wp_footer(); ?>
