@@ -13,14 +13,18 @@
 </header>
 
 <section class="featured-items">
-    <?php 
+    <?php
 
-    $terms = get_field( 'featured', 'options' );
+    $terms = get_field( 'cat_featured', 'options' );
+    $posts = get_field( 'post_feature', 'options' ); // TODO: Figure this out, need to display both
 
-    if( $terms ): ?>
+    if ( $terms ) :
+    ?>
 
-        <?php foreach( $terms as $term ) :
-            $feat_img = get_field( 'cat_img', $term ); ?>
+        <?php
+        foreach ( $terms as $term ) :
+            $feat_img = get_field( 'cat_img', $term );
+        ?>
 
             <div class="featured-item">
                 <a href="<?php echo get_term_link( $term ); ?>"><img alt="" src="<?php echo $feat_img['sizes']['medium']; ?>"></a>

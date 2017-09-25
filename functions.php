@@ -83,16 +83,6 @@ add_action( 'customize_register', 'bones_theme_customizer' );
 
 
 /**
- * EXTERNAL FONTS
- */
-// function bones_fonts() {
-//   wp_enqueue_style( 'googleFonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' );
-// }
-
-// add_action( 'wp_enqueue_scripts', 'bones_fonts' );
-
-
-/**
  * Testing our environment.
  *
  * @returns true if on production server false if not
@@ -101,46 +91,53 @@ function we_are_live() {
   $host = home_url();
 
   if ( preg_match( '/\.dev/', $host ) ) {
-    return false;
+		return false;
   }
   return true;
 }
 
 
 // Enable support for HTML5 markup.
-	add_theme_support( 'html5', array(
-    'caption',
-    'search-form',
-	) );
+	add_theme_support(
+         'html5', array(
+			 'caption',
+			 'search-form',
+		 )
+        );
 
 
   if ( ! function_exists( 'the_field' ) ) {
-    add_action( 'admin_notices', 'bones_acf_notice' );
+		add_action( 'admin_notices', 'bones_acf_notice' );
   }
 
-  function bones_acf_notice() {
-    ?>
-    <div class="update-nag notice" style="display:block; margin:20px 0;">
-      <h3><?php echo( 'Install Advanced Custom Fields Pro please or nothing will work probably!' ); ?></h3>
-    </div>
-    <?php
-  }
+/**
+ * ACF Bones Notice
+ */
+function bones_acf_notice() {
+	?>
+	<div class="update-nag notice" style="display:block; margin:20px 0;">
+	<h3><?php echo( 'Install Advanced Custom Fields Pro please or nothing will work probably!' ); ?></h3>
+	</div>
+	<?php
+}
 
 /*
 * ACF options page
 */
-if( function_exists('acf_add_options_page') ) {
-  
-  acf_add_options_page(array(
-    'page_title'  => 'Site Options',
-    'menu_title'  => 'Site Options',
-    'menu_slug'   => 'options',
-    'capability'  => 'edit_posts',
-    'redirect'    => false
-  ));
+if ( function_exists( 'acf_add_options_page' ) ) {
+
+		  acf_add_options_page(
+          array(
+			  'page_title'  => 'Site Options',
+			  'menu_title'  => 'Site Options',
+			  'menu_slug'   => 'options',
+			  'capability'  => 'edit_posts',
+			  'redirect'    => false,
+		  )
+			  );
 
 }
 // Hide ACF from admin menu if live
-if ( we_are_live() ){
-  add_filter('acf/settings/show_admin', '__return_false');
+if ( we_are_live() ) {
+		  add_filter( 'acf/settings/show_admin', '__return_false' );
 }

@@ -26,4 +26,9 @@ General:
   ☐ Favicon needs to be made
 
 Media:
-  ✔ Seems not all media got imported (http://swhtest.rampages.us/wp-admin/upload.php?mode=list&paged=24) @done (17-09-19 11:44)
+  ☐ Seems not all media got imported (http://swhtest.rampages.us/wp-admin/upload.php?mode=list&paged=24)
+
+Search:
+  ✔ Implement @done (17-09-21 16:28)
+  ☐ Style results page
+  

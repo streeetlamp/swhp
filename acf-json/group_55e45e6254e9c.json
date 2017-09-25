@@ -364,8 +364,8 @@
                             "collapsed": "",
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
-                            "button_label": "",
+                            "layout": "block",
+                            "button_label": "Add Slide",
                             "sub_fields": [
                                 {
                                     "key": "field_59b2dc798671b",
@@ -376,7 +376,7 @@
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "20",
                                         "class": "",
                                         "id": ""
                                     },
@@ -390,6 +390,44 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": ""
+                                },
+                                {
+                                    "key": "field_59c940fb4fbe4",
+                                    "label": "Headline",
+                                    "name": "headline",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": 99
+                                },
+                                {
+                                    "key": "field_59c9307d44d0c",
+                                    "label": "Excerpt",
+                                    "name": "excerpt",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": 240
                                 },
                                 {
                                     "key": "field_59b2dc8a8671c",
@@ -443,5 +481,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1504894595
+    "modified": 1506364814
 }

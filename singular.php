@@ -12,7 +12,9 @@ if ( ! have_posts() ) :
     get_template_part( 'library/templates/not-found' );
 endif;
 
-while ( have_posts() ) : the_post(); ?>
+while (
+    have_posts() ) :
+    the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -27,9 +29,11 @@ while ( have_posts() ) : the_post(); ?>
 
         <?php
             // check if the flexible content field has rows of data
-        if( have_rows('flexible_content') ):
-            while ( have_rows('flexible_content') ) : the_row();
-        get_template_part('library/flex-content-loop');
+        if ( have_rows( 'flexible_content' ) ) :
+            while (
+                have_rows( 'flexible_content' ) ) :
+                the_row();
+        get_template_part( 'library/flex-content-loop' );
         endwhile;
         endif;
         ?>
@@ -45,8 +49,9 @@ while ( have_posts() ) : the_post(); ?>
 
     </section>
 
-</article> <?php // end article ?>
+</article>
 
 <?php endwhile; ?>
 
-<?php get_template_part( 'library/templates/the-footer' );
+<?php
+get_template_part( 'library/templates/the-footer' );

@@ -45,26 +45,26 @@ function rw_title( $title, $sep, $seplocation ) {
 
   // Don't affect in feeds.
   if ( is_feed() ) {
-    return $title;
+		return $title;
 }
 
   // Add the blog's name
-if ( 'right' == $seplocation ) {
-    $title .= get_bloginfo( 'name' );
+if ( 'right' === $seplocation ) {
+		$title .= get_bloginfo( 'name' );
 } else {
-    $title = get_bloginfo( 'name' ) . $title;
+		$title = get_bloginfo( 'name' ) . $title;
 }
 
   // Add the blog description for the home/front page.
 $site_description = get_bloginfo( 'description', 'display' );
 
 if ( $site_description && ( is_home() || is_front_page() ) ) {
-    $title .= " {$sep} {$site_description}";
+		$title .= " {$sep} {$site_description}";
 }
 
   // Add a page number if necessary:
 if ( $paged >= 2 || $page >= 2 ) {
-    $title .= " {$sep} " . sprintf( __( 'Page %s', 'dbt' ), max( $paged, $page ) );
+		$title .= " {$sep} " . sprintf( __( 'Page %s', 'dbt' ), max( $paged, $page ) );
 }
 
 return $title;
@@ -84,7 +84,7 @@ function bones_rss_version() {
  */
 function bones_remove_wp_ver_css_js( $src ) {
   if ( strpos( $src, 'ver=' ) ) {
-    $src = remove_query_arg( 'ver', $src );
+		$src = remove_query_arg( 'ver', $src );
 }
 return $src;
 }
@@ -124,12 +124,12 @@ function bones_scripts_and_styles() {
 
         // check environment before outputting appropriate stylesheet
        if ( we_are_live() ) {
-          wp_enqueue_style( 'bones-stylesheet-min' );
-          wp_enqueue_script( 'bones-js-min' );
+			wp_enqueue_style( 'bones-stylesheet-min' );
+			wp_enqueue_script( 'bones-js-min' );
       } else {
-          wp_enqueue_style( 'bones-stylesheet' );
-          wp_enqueue_script( 'bones-js' );
-          wp_enqueue_script( 'bones-livereload' );
+			wp_enqueue_style( 'bones-stylesheet' );
+			wp_enqueue_script( 'bones-js' );
+			wp_enqueue_script( 'bones-livereload' );
       }
 
       wp_enqueue_style( 'bones-font-awesome' );
@@ -164,7 +164,7 @@ function bones_theme_support() {
 		array(
             'main-nav' => __( 'The Main Menu', 'bonestheme' ),
 			'footer-nav' => __( 'The Footer Menu', 'bonestheme' ),
-          )
+		)
        );
 } /* end bones theme support */
 
@@ -176,10 +176,11 @@ function bones_page_navi() {
   global $wp_query;
   $bignum = 999999999;
   if ( $wp_query->max_num_pages <= 1 ) {
-    return;
+		return;
 }
 echo '<nav class="pagination">';
-  echo paginate_links( array( // xss ok
+  echo paginate_links(
+       array( // xss ok
     'base'         => str_replace( $bignum, '%#%', esc_url( get_pagenum_link( $bignum ) ) ),
     'format'       => '',
     'current'      => max( 1, get_query_var( 'paged' ) ),
@@ -189,7 +190,8 @@ echo '<nav class="pagination">';
     'type'         => 'list',
     'end_size'     => 3,
     'mid_size'     => 3,
-    ) );
+	   )
+      );
   echo '</nav>';
 } /* end page navi */
 

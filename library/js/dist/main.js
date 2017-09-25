@@ -2810,7 +2810,7 @@ jQuery(document).ready(function($) {
       var $dotsWrap = $('<ul />', {'class': 'slider-dots-wrap'});
 
       for (var i = 0; i < slideCount; i++) {
-        var $dotEl = $('<li />', {'class': 'slider-dot'}).html('<a href="javascript:void(0)"><i class="fa fa-circle-o"></i></a>');
+        var $dotEl = $('<li />', {'class': 'slider-dot'}).html('<a href="javascript:void(0)"><i class="fa fa-circle" aria-hidden="true"></i></a>');
         $dotsWrap.append($dotEl);
       }
       $element.append($dotsWrap);

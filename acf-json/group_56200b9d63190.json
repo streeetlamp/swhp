@@ -40,8 +40,8 @@
             "disabled": 0
         },
         {
-            "key": "field_59b8219cf9efc",
-            "label": "Home Featured",
+            "key": "field_59c9556788aa9",
+            "label": "Featured Categories",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -56,9 +56,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_59b821c29090f",
-            "label": "Featured",
-            "name": "featured",
+            "key": "field_59c9557788aaa",
+            "label": "Categories to Feature",
+            "name": "cat_featured",
             "type": "taxonomy",
             "instructions": "",
             "required": 0,
@@ -69,13 +69,52 @@
                 "id": ""
             },
             "taxonomy": "category",
-            "field_type": "checkbox",
+            "field_type": "multi_select",
             "allow_null": 0,
-            "add_term": 1,
+            "add_term": 0,
             "save_terms": 0,
             "load_terms": 0,
             "return_format": "object",
             "multiple": 0
+        },
+        {
+            "key": "field_59c95ac61a317",
+            "label": "Featured Pages or Posts",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59c95ad61a318",
+            "label": "Post or Page to Feature",
+            "name": "post_feature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post",
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
         }
     ],
     "location": [
@@ -95,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1505333692
+    "modified": 1506368449
 }
