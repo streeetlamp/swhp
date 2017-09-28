@@ -615,7 +615,7 @@ NAVIGATION STYLES
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: .0145em;
+  letter-spacing: .0185em;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -633,6 +633,19 @@ NAVIGATION STYLES
     .nav li {
       display: inline-block;
       height: 60px; } }
+  .nav li.menu-item-has-children:after {
+    content: '▵';
+    display: block;
+    position: relative;
+    float: right;
+    top: -23px;
+    right: -2px;
+    font-size: 12px;
+    color: #555;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    transition: -webkit-transform .15s ease-in-out, color .15s ease-in-out;
+    transition: transform .15s ease-in-out, color .15s ease-in-out; }
   .nav li a {
     display: block;
     text-decoration: none;
@@ -669,6 +682,10 @@ NAVIGATION STYLES
     .nav li:focus ul.children a {
       font-size: 0.90em;
       padding: .2em .45em; }
+  .nav li:hover.menu-item-has-children:after, .nav li:focus.menu-item-has-children:after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    color: #0966a9; }
 
 /* end .nav */
 .pagination, .wp-prev-next {
@@ -729,7 +746,8 @@ FOOTER
   zoom: 1;
   background: #000;
   color: #fff;
-  padding: 40px 0; }
+  padding: 40px 0;
+  margin-top: 40px; }
   .footer:before, .footer:after {
     content: "";
     display: table; }

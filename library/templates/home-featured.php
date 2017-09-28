@@ -17,18 +17,19 @@
 
     $terms = get_field( 'cat_featured', 'options' );
     $posts = get_field( 'post_feature', 'options' ); // TODO: Figure this out, need to display both
+    $terms_posts = array_merge( $terms, $posts );
 
-    if ( $terms ) :
+    if ( $terms_posts ) :
     ?>
 
         <?php
-        foreach ( $terms as $term ) :
-            $feat_img = get_field( 'cat_img', $term );
+        foreach ( $terms_posts as $terms_post ) :
+            $feat_img = get_field( 'cat_img', $terms_post );
         ?>
 
             <div class="featured-item">
-                <a href="<?php echo get_term_link( $term ); ?>"><img alt="" src="<?php echo $feat_img['sizes']['medium']; ?>"></a>
-                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a>
+                <a href="<?php if ( key($terms_post) == 'term_id' ) { echo get_term_link( $terms_post ); } else { echo get_permalink( $terms_post ); } ?>"><img alt="" src="<?php if ( key($terms_post) == 'term_id' ) { echo $feat_img['sizes']['medium']; } else { echo get_the_post_thumbnail_url( $terms_post, 'medium' ); } ?>"></a>
+                <a href="<?php if ( key($terms_post) == 'term_id' ) { echo get_term_link( $terms_post ); } else { echo get_permalink( $terms_post ); } ?>"><?php if ( key($terms_post) == 'term_id' ) { echo $terms_post->name; } else { echo $terms_post->post_title; } ?></a>
             </div>
         <?php endforeach; ?>
 

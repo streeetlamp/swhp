@@ -34,6 +34,9 @@ function bones_ahoy() {
   // enqueue base scripts and styles
   add_action( 'wp_enqueue_scripts', 'bones_scripts_and_styles', 999 );
 
+  // let's get language support going
+  load_theme_textdomain( 'bonestheme', get_template_directory() . '/library/translation' );
+
   // launching this stuff after theme setup
   bones_theme_support();
 
