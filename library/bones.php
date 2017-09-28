@@ -212,13 +212,6 @@ function bones_excerpt_more( $more ) {
 	return '...  <a class="excerpt-read-more" href="' . get_permalink( $post->ID ) . '" title="' . __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ) . '">' . __( 'Read more &raquo;', 'bonestheme' ) . '</a>';
 }
 
-
-/** Hide ACF from admin menu if live */
-if ( we_are_live() ) {
-  add_filter( 'acf/settings/show_admin', '__return_false' );
-}
-
-
 /** Customize menu thing is annoying */
 function bones_before_admin_bar_render() {
   global $wp_admin_bar;
