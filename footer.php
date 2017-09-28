@@ -42,10 +42,9 @@ VCU Libraries’ Image Portal.</p>
         <div class="footer-creds">
             <a href="https://library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/vcu-footer-logo.svg' ); ?></a>
         
-            <p class="source-org copyright">&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.</p>
             <p class="last-modified"><small>Last modified: <?php the_modified_time( 'F j, Y' ); ?></small></p>
 
-            <p class="editor-login"><a href="<?php echo esc_url( admin_url() ); ?>">Editor Login</a></p>
+            <p class="editor-login"><small><a href="<?php echo esc_url( admin_url() ); ?>">Editor Login</a></small></p>
         </div>
    </div>
 

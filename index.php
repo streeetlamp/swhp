@@ -18,7 +18,7 @@ get_template_part( 'library/templates/the-header' );
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<header class="article-header">
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+    			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			</header>
 
 			<section class="entry-content">

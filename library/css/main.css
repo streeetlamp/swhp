@@ -479,6 +479,47 @@ body {
     display: block;
     margin: 0 auto; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
+figure.alignright, img.alignright {
+  float: right;
+  margin: 0 0 1em 1.5em; }
+
+figure.alignleft, img.alignleft {
+  float: left;
+  margin: 0 1.5em 1em 0; }
+
+figure.aligncenter, img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.alignright {
+  float: right; }
+
+.alignleft {
+  float: left; }
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #f4f4f4;
+  padding: 1em; }
+
+.wp-caption-text {
+  font-size: .80em; }
+
+.author {
+  font-size: .80em;
+  color: #555; }
+  .author a, .author a:visited {
+    color: #555; }
+
 /*********************
 LINK STYLES
 *********************/
@@ -559,6 +600,9 @@ h5, .h5 {
   line-height: 2.09em;
   text-transform: uppercase;
   letter-spacing: 2px; }
+
+.entry-title, .single-title {
+  margin-bottom: 0; }
 
 /*********************
 HEADER STYLES

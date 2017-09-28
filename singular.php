@@ -21,6 +21,7 @@ while (
     <?php if ( ! is_front_page() ) : ?>
         <header class="article-header entry-header">
             <h1 class="entry-title single-title"><?php the_title(); ?></h1>
+            <span class="author vcard">Posted by: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span>
         </header>
     <?php endif; ?>
 
