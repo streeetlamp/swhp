@@ -20,7 +20,6 @@ while (
 
     <?php if ( ! is_front_page() ) : ?>
         <header class="article-header entry-header">
-            <h1 class="entry-title single-title"><?php the_title(); ?></h1>
             <span class="author vcard">Posted by: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span>
         </header>
     <?php endif; ?>
@@ -42,7 +41,7 @@ while (
         <?php if ( is_front_page() ) : ?>
             <section class="image-portal-banner">
                 <p>Explore historical materials related to social reform and social welfare through the Image Portal.</p>
-                <a href="http://images.socialwelfare.library.vcu.edu">Image Portal</a>
+                <a href="http://images.socialwelfare.library.vcu.edu"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?> <span>Image Portal</span></a>
             </section>
 
             <?php get_template_part( 'library/templates/home-featured' ); ?>

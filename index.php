@@ -17,9 +17,11 @@ get_template_part( 'library/templates/the-header' );
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<header class="article-header">
-    			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			</header>
+            <?php if ( ! is_front_page() ) : ?>
+                <header class="article-header entry-header">
+                    <span class="author vcard">Posted by: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span>
+                </header>
+            <?php endif; ?>
 
 			<section class="entry-content">
 			<?php the_content(); ?>
