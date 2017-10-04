@@ -18,9 +18,17 @@ while (
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php if ( ! is_front_page() ) : ?>
+    <?php if ( ! is_front_page() && is_single() ) : ?>
         <header class="article-header entry-header">
-            <span class="author vcard">Posted by: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span>
+            <h1 class="entry-title single-title"><?php the_title(); ?></h1>
+            <?php
+            if ( has_category() ) :
+                echo "<div class='category-meta small'>";
+                echo "<span class='in-cat'>in: </span>";
+                the_category( ', ' );
+                echo '</div>';
+            endif;
+            ?>
         </header>
     <?php endif; ?>
 
@@ -35,6 +43,10 @@ while (
                 the_row();
         get_template_part( 'library/flex-content-loop' );
         endwhile;
+        endif;
+
+        if ( comments_open() && is_single() || get_comments_number() && is_single() ) :
+            comments_template();
         endif;
         ?>
 

@@ -101,12 +101,15 @@ function we_are_live() {
 
 
 // Enable support for HTML5 markup.
-	add_theme_support(
-         'html5', array(
-			 'caption',
-			 'search-form',
-		 )
-        );
+add_theme_support(
+    'html5', array(
+        'caption',
+        'search-form',
+        'comment-list',
+        'comment-form',
+        'gallery',
+    )
+);
 
 
   if ( ! function_exists( 'the_field' ) ) {

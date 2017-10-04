@@ -526,6 +526,9 @@ figure.aligncenter, img.aligncenter {
   .author a, .author a:visited {
     color: #555; }
 
+.category-meta {
+  color: #555; }
+
 /*********************
 LINK STYLES
 *********************/
@@ -751,35 +754,33 @@ NAVIGATION STYLES
     padding: 1.155em .75em 0 .75em; }
     .nav li a:hover, .nav li a:focus {
       border-bottom: 1px solid #ccc; }
+      .nav li a:hover + ul.sub-menu, .nav li a:hover ul.children, .nav li a:focus + ul.sub-menu, .nav li a:focus ul.children {
+        display: block; }
   .nav li:first-child a {
     padding-left: 0; }
   .nav li ul.sub-menu,
   .nav li ul.children {
     display: none;
     border-top: 1px solid #000;
-    margin-top: 17px; }
+    margin-top: 17px;
+    padding: 10px 0 15px 0;
+    background: #fff;
+    z-index: 99;
+    text-transform: none;
+    position: absolute;
+    left: 0; }
     .nav li ul.sub-menu li,
     .nav li ul.children li {
       height: auto; }
       .nav li ul.sub-menu li a,
       .nav li ul.children li a {
         display: inline-block;
-        padding: 0 40px; }
+        padding: .2em .45em;
+        font-size: 0.90em; }
   .nav li:hover ul.sub-menu,
   .nav li:hover ul.children, .nav li:focus ul.sub-menu,
   .nav li:focus ul.children {
-    padding: 10px 0 15px 0;
-    background: #fff;
-    display: block;
-    z-index: 99;
-    text-transform: none;
-    position: absolute;
-    left: 0; }
-    .nav li:hover ul.sub-menu a,
-    .nav li:hover ul.children a, .nav li:focus ul.sub-menu a,
-    .nav li:focus ul.children a {
-      font-size: 0.90em;
-      padding: .2em .45em; }
+    display: block; }
   .nav li:hover.menu-item-has-children:after, .nav li:focus.menu-item-has-children:after {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
