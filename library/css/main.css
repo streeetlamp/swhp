@@ -625,6 +625,9 @@ a, a:visited {
 .featured-item a {
   text-decoration: none; }
 
+.azindex li > a, .azlink a, .azlinknav a {
+  color: #0966a9; }
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
