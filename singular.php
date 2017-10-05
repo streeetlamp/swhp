@@ -53,7 +53,12 @@ while (
         <?php if ( is_front_page() ) : ?>
             <section class="image-portal-banner">
                 <p>Explore historical materials related to social reform and social welfare through the Image Portal.</p>
-                <a href="http://images.socialwelfare.library.vcu.edu"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?> <span>Image Portal</span></a>
+                <a href="http://images.socialwelfare.library.vcu.edu">
+                    <ul>
+                        <li><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?></li>
+                        <li>Image Portal</li>
+                    </ul>
+                </a>
             </section>
 
             <?php get_template_part( 'library/templates/home-featured' ); ?>

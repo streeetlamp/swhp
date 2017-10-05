@@ -17,7 +17,7 @@
 
     $terms = get_field( 'cat_featured', 'options' );
     $posts = get_field( 'post_feature', 'options' ); // TODO: Figure this out, need to display both
-    $terms_posts = array_merge( $terms, $posts );
+    $terms_posts = array_merge( $terms, $posts ); // TODO: Only merge arrays that exist
 
     if ( $terms_posts ) :
     ?>
