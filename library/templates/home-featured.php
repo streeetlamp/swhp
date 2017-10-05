@@ -14,23 +14,15 @@
 
 <section class="featured-items">
     <?php
+    $feat_posts = get_field( 'post_feature', 'options' );
 
-    $terms = get_field( 'cat_featured', 'options' );
-    $posts = get_field( 'post_feature', 'options' ); // TODO: Figure this out, need to display both
-    $terms_posts = array_merge( $terms, $posts ); // TODO: Only merge arrays that exist
-
-    if ( $terms_posts ) :
-    ?>
-
-        <?php
-        foreach ( $terms_posts as $terms_post ) :
-            $feat_img = get_field( 'cat_img', $terms_post );
+    if ( $feat_posts ) :
+        foreach ( $feat_posts as $feat_post ) :
         ?>
-
-            <div class="featured-item">
-                <a href="<?php if ( key($terms_post) == 'term_id' ) { echo get_term_link( $terms_post ); } else { echo get_permalink( $terms_post ); } ?>"><img alt="" src="<?php if ( key($terms_post) == 'term_id' ) { echo $feat_img['sizes']['medium']; } else { echo get_the_post_thumbnail_url( $terms_post, 'medium' ); } ?>"></a>
-                <a href="<?php if ( key($terms_post) == 'term_id' ) { echo get_term_link( $terms_post ); } else { echo get_permalink( $terms_post ); } ?>"><?php if ( key($terms_post) == 'term_id' ) { echo $terms_post->name; } else { echo $terms_post->post_title; } ?></a>
-            </div>
+        <div class="featured-item">
+            <a href="<?php echo get_permalink( $feat_post ); ?>"><img alt="" src="<?php echo get_the_post_thumbnail_url( $feat_post, 'medium' ); ?>"></a>
+            <a href="<?php echo get_permalink( $feat_post ); ?>"><?php echo $feat_post->post_title; ?></a>
+        </div>
         <?php endforeach; ?>
 
     <?php endif; ?>
