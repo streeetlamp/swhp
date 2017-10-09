@@ -932,7 +932,11 @@ NAVIGATION STYLES
     float: left;
     display: inline;
     overflow: hidden;
-    border-right: 1px solid #555; }
+    border-right: 1px solid #ccc; }
+    .pagination li:last-child, .pagination li:first-child {
+      border: none; }
+    .pagination li:first-child {
+      border-right: 1px solid #ccc; }
   .pagination a, .pagination span {
     margin: 0;
     text-decoration: none;
@@ -943,16 +947,16 @@ NAVIGATION STYLES
     padding: 0.75em;
     min-width: 1em;
     display: block;
-    color: #000; }
+    color: #555; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
       background-color: #000;
       color: #fff; }
   .pagination .current {
     cursor: default;
-    color: #000; }
+    color: #ccc; }
     .pagination .current:hover, .pagination .current:focus {
-      background-color: #fff;
-      color: #000; }
+      background: transparent;
+      color: #ccc; }
 
 .wp-prev-next .prev-link {
   float: left; }
