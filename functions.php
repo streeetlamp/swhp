@@ -143,7 +143,8 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 			  );
 
 }
-// Hide ACF from admin menu if live TODO: Uncomment before live
-// if ( we_are_live() ) {
-// 		  add_filter( 'acf/settings/show_admin', '__return_false' );
-// }
+
+// Hide ACF from admin menu if live
+if ( we_are_live() ) {
+    add_filter( 'acf/settings/show_admin', '__return_false' );
+}

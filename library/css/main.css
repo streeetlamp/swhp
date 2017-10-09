@@ -557,6 +557,72 @@ figure.aligncenter, img.aligncenter {
 .category-meta {
   color: #555; }
 
+@media (min-width: 0) and (max-width: 768px) {
+  .entry-content .azindex {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .entry-content .azindex ul {
+      padding: 0; } }
+
+#comments {
+  border-top: 2px solid #000;
+  padding-top: 20px; }
+
+.commentlist {
+  padding-left: 40px;
+  font-size: .85em; }
+
+.comment-author a {
+  text-decoration: none; }
+
+.comment-metadata a {
+  color: #555;
+  text-decoration: none; }
+
+a.comment-reply-link {
+  text-decoration: none;
+  color: #555;
+  font-size: .85em; }
+
+.comment-reply-title {
+  margin-top: 40px;
+  margin-bottom: 0; }
+
+p.logged-in-as {
+  margin: 0; }
+  p.logged-in-as a {
+    text-decoration: none;
+    color: #555; }
+
+.comment-form-comment label {
+  display: block;
+  font-size: .85em;
+  color: #555; }
+
+.comment-form-comment textarea {
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  background: #f4f4f4;
+  border: 1px solid #dbdada; }
+
+.form-submit .submit {
+  background: transparent;
+  border: 2px solid #dbdada;
+  padding: 5px 10px;
+  font-size: .85em;
+  color: #555;
+  transition: background .15s ease-in-out, color .15s ease-in-out; }
+  .form-submit .submit:hover, .form-submit .submit:focus {
+    background: #f4f4f4;
+    color: #000; }
+
 /*********************
 LINK STYLES
 *********************/
@@ -772,6 +838,9 @@ NAVIGATION STYLES
   @media (min-width: 769px) {
     .nav {
       margin: 5px 0 20px 0; } }
+  @media (min-width: 0) and (max-width: 768px) {
+    .nav li {
+      padding: 10px 0; } }
   @media (min-width: 769px) {
     .nav li {
       display: inline-block;
@@ -795,9 +864,12 @@ NAVIGATION STYLES
   .nav li a {
     display: block;
     text-decoration: none;
-    padding: 1.155em .75em 0 .75em;
+    padding: 0 .75em 0 .75em;
     color: #000;
     transition: color .15s ease-in-out; }
+    @media (min-width: 769px) {
+      .nav li a {
+        padding: 1.155em .75em 0 .75em; } }
     .nav li a:hover, .nav li a:focus {
       color: #0966a9; }
       .nav li a:hover + ul.sub-menu, .nav li a:hover ul.children, .nav li a:focus + ul.sub-menu, .nav li a:focus ul.children {
@@ -814,6 +886,11 @@ NAVIGATION STYLES
     position: absolute;
     left: 0;
     background: #f4f4f4; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .nav li ul.sub-menu,
+      .nav li ul.children {
+        width: 100%;
+        margin-top: 10px; } }
     .nav li ul.sub-menu li,
     .nav li ul.children li {
       height: auto; }
