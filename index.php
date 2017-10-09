@@ -17,12 +17,6 @@ get_template_part( 'library/templates/the-header' );
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-            <?php if ( ! is_front_page() ) : ?>
-                <header class="article-header entry-header">
-                    <span class="author vcard">Posted by: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span>
-                </header>
-            <?php endif; ?>
-
 			<section class="entry-content">
 			<?php the_content(); ?>
 
