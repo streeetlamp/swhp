@@ -698,6 +698,9 @@ a.excerpt-read-more {
   a.excerpt-read-more:focus, a.excerpt-read-more:hover {
     text-decoration: underline; }
 
+.search header.entry-header a {
+  color: #0966a9; }
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
