@@ -425,6 +425,34 @@ p {
 /*********************
 BUTTONS
 *********************/
+.js-mobile-nav-toggle {
+  display: inline-block;
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none; }
+  .js-mobile-nav-toggle:hover, .js-mobile-nav-toggle:focus {
+    text-decoration: none; }
+
+.js-mobile-nav-toggle {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  width: 31.0344827586%;
+  float: left;
+  margin-right: 3.4482758621%;
+  font-size: .85em;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none; }
+  .js-mobile-nav-toggle:hover, .js-mobile-nav-toggle:focus {
+    background: #f4f4f4; }
+  @media (min-width: 769px) {
+    .js-mobile-nav-toggle {
+      display: none; } }
+
 /*********************
 GENERAL STYLESHEET
 *********************/
@@ -651,45 +679,52 @@ HEADER STYLES
   margin-bottom: 0; }
   @media (min-width: 0) and (max-width: 768px) {
     #logo {
+      margin-left: 8.6206896552%;
       width: 82.7586206897%;
       float: left;
       margin-right: 3.4482758621%;
-      margin-left: 8.6206896552%; } }
+      margin-left: 8.6206896552%;
+      margin-bottom: 20px; } }
 
 .inner-header {
   position: relative; }
   .inner-header .search {
-    width: 48.275862069%;
+    width: 65.5172413793%;
     float: right;
     margin-right: 0;
     text-align: right;
-    position: relative;
-    right: 0;
-    top: 45px; }
+    position: relative; }
     .inner-header .search input {
       background: #f4f4f4;
       border: none;
       padding: 10px 15px;
-      width: 50%;
+      width: calc(100% - 40px);
       font-size: .8em;
       outline: none; }
     .inner-header .search button {
       background: none;
       border: none;
-      position: relative;
-      left: -40px; }
+      position: absolute;
+      right: 10px;
+      top: 5px; }
     @media (min-width: 0) and (max-width: 768px) {
+      .inner-header .search label {
+        height: 0px;
+        overflow: hidden;
+        position: fixed; } }
+    @media (min-width: 769px) {
       .inner-header .search {
-        position: static;
-        clear: both;
-        width: 100%;
-        float: left;
-        margin-left: 0;
+        width: 48.275862069%;
+        float: right;
         margin-right: 0;
-        text-align: justify;
-        margin: -1.2rem 25% .5rem 25%; }
-        .inner-header .search label {
-          display: block; } }
+        top: 45px;
+        right: 0; }
+        .inner-header .search input {
+          width: 50%; }
+        .inner-header .search button {
+          left: -40px;
+          top: 0;
+          position: relative; } }
 
 .featured-header {
   text-align: center;
@@ -704,7 +739,14 @@ NAVIGATION STYLES
 *********************/
 .main-nav {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: none; }
+  @media (min-width: 0) and (max-width: 768px) {
+    .main-nav {
+      padding-bottom: 20px; } }
+  @media (min-width: 769px) {
+    .main-nav {
+      display: block; } }
 
 .nav {
   border-bottom: 1px solid #000;

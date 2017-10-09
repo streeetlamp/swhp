@@ -62,6 +62,8 @@
 
           <?php get_search_form(); ?>
 
+          <button class="js-mobile-nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+
           <nav class="nav">
             <?php
             wp_nav_menu(array(
