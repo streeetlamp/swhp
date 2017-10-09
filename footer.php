@@ -44,6 +44,8 @@ VCU Libraries’ Image Portal.</p>
         
             <p class="last-modified"><small>Last modified: <?php the_modified_time( 'F j, Y' ); ?></small></p>
 
+            <p><small>Contact us: <a href="mailto:LibSWHP@vcu.edu">LibSWHP@vcu.edu</a></small></p>
+
             <p class="editor-login"><small><a href="<?php echo esc_url( admin_url() ); ?>">Editor Login</a></small></p>
         </div>
    </div>
