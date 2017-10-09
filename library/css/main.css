@@ -85,16 +85,9 @@ a {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-a:focus {
-  outline: 0; }
-
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active,
-a:hover {
-  outline: 0; }
-
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -411,7 +404,8 @@ MIXINS
   display: none; }
 
 .visually-hidden {
-  visibility: hidden; }
+  position: absolute;
+  margin-left: -9999px; }
 
 /*********************
 GRID
@@ -774,8 +768,7 @@ HEADER STYLES
       border: none;
       padding: 10px 15px;
       width: calc(100% - 40px);
-      font-size: .8em;
-      outline: none; }
+      font-size: .8em; }
     .inner-header .search button {
       background: none;
       border: none;

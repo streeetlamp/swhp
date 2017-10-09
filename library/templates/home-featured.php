@@ -12,7 +12,7 @@
     <h3>Featured</h3>
 </header>
 
-<section class="featured-items">
+<section class="featured-items" aria-label="featured items">
     <?php
     $feat_posts = get_field( 'post_feature', 'options' );
 

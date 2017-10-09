@@ -32,7 +32,7 @@ while (
         </header>
     <?php endif; ?>
 
-    <section class="entry-content">
+    <section class="entry-content" aria-label="content">
         <?php the_content(); ?>
 
         <?php
@@ -51,7 +51,7 @@ while (
         ?>
 
         <?php if ( is_front_page() ) : ?>
-            <section class="image-portal-banner">
+            <section class="image-portal-banner" aria-label="image portal banner">
                 <p>Explore historical materials related to social reform and social welfare through the Image Portal.</p>
                 <a href="http://images.socialwelfare.library.vcu.edu">
                     <ul>

@@ -25,7 +25,7 @@
       <div class="slide" style="background-image:url('<?php echo $image['sizes']['large']; ?>');">
         <div class="slide-excerpt-wrap">
             <div class="slide-inner">
-                <h2 class="slide-headline"><?php echo $headline; ?></h2>
+                <h1 class="slide-headline"><?php echo $headline; ?></h1>
                 <div class="slide-excerpt"><?php echo $excerpt; ?></div><div class="slide-button"><a href="<?php echo $link; ?>">Learn More</a></div>
             </div>
         </div>
@@ -33,5 +33,5 @@
 
     <?php endwhile; ?>
 
-  </div>  
+  </div>
 </div>
