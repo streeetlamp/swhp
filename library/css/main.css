@@ -463,6 +463,14 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
 
+main.main {
+  zoom: 1; }
+  main.main:before, main.main:after {
+    content: "";
+    display: table; }
+  main.main:after {
+    clear: both; }
+
 .inner-content, .inner-footer, .inner-header {
   width: 100%;
   max-width: 1200px;
@@ -590,6 +598,9 @@ figure.aligncenter, img.aligncenter {
 .entry-content .azindex ul li + li {
   margin-top: 20px; }
 
+div[id^='azindex-'] {
+  clear: both; }
+
 #comments {
   border-top: 2px solid #000;
   padding-top: 20px; }
@@ -646,6 +657,33 @@ p.logged-in-as {
   .form-submit .submit:hover, .form-submit .submit:focus {
     background: #f4f4f4;
     color: #000; }
+
+.archive article.post {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 769px) {
+    .archive article.post {
+      width: 48.275862069%;
+      float: left; }
+      .archive article.post:nth-child(2n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .archive article.post:nth-child(2n + 2) {
+        margin-left: 51.724137931%;
+        margin-right: -100%;
+        clear: none; } }
+
+.cat-archive-wrap {
+  zoom: 1; }
+  .cat-archive-wrap:before, .cat-archive-wrap:after {
+    content: "";
+    display: table; }
+  .cat-archive-wrap:after {
+    clear: both; }
 
 /*********************
 LINK STYLES
