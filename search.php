@@ -42,7 +42,8 @@ get_template_part( 'library/templates/the-header' );
             </header>
 
 			<section class="entry-content">
-    			<?php the_excerpt(); 
+    			<?php
+                the_excerpt();
                 echo '<a class="excerpt-read-more small" href="' . get_permalink() . '" title="' . __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title() ) . '">' . __( 'Continue Reading &raquo;', 'bonestheme' ) . '</a>';
                 ?>
 			</section>

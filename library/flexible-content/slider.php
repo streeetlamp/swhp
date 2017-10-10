@@ -21,14 +21,15 @@
       $link = get_sub_field( 'link' );
       ?>
 
-
       <div class="slide" style="background-image:url('<?php echo $image['sizes']['large']; ?>');">
+        <?php if ( $excerpt || $headline || $link ) : ?>
         <div class="slide-excerpt-wrap">
             <div class="slide-inner">
                 <h1 class="slide-headline"><?php echo $headline; ?></h1>
-                <div class="slide-excerpt"><?php echo $excerpt; ?></div><div class="slide-button"><a href="<?php echo $link; ?>">Learn More</a></div>
+                <div class="slide-excerpt"><?php echo $excerpt; ?></div><?php if ( $link ) : ?><div class="slide-button"><a href="<?php echo $link; ?>">Learn More</a></div><?php endif; ?>
             </div>
         </div>
+        <?php endif; ?>
       </div>
 
     <?php endwhile; ?>
