@@ -487,6 +487,12 @@ body {
 .featured-items {
   text-align: center; }
 
+hr {
+  outline: none;
+  border: 0;
+  height: 2px;
+  background: #ccc; }
+
 .featured-item {
   width: 100%;
   float: left;
@@ -543,10 +549,17 @@ figure.aligncenter, img.aligncenter {
 
 .wp-caption {
   background: #f4f4f4;
-  padding: 1em; }
+  padding: .5em; }
 
 .wp-caption-text {
-  font-size: .80em; }
+  font-size: .70em;
+  margin-top: 10px; }
+  .wp-caption-text a {
+    color: #0966a9;
+    text-decoration: none; }
+    .wp-caption-text a:hover, .wp-caption-text a:focus {
+      text-decoration: underline;
+      color: #0966a9; }
 
 .author {
   font-size: .80em;
@@ -565,6 +578,17 @@ figure.aligncenter, img.aligncenter {
     margin-right: 0; }
     .entry-content .azindex ul {
       padding: 0; } }
+
+.entry-content .azindex ul li {
+  zoom: 1; }
+  .entry-content .azindex ul li:before, .entry-content .azindex ul li:after {
+    content: "";
+    display: table; }
+  .entry-content .azindex ul li:after {
+    clear: both; }
+
+.entry-content .azindex ul li + li {
+  margin-top: 20px; }
 
 #comments {
   border-top: 2px solid #000;
