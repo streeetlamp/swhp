@@ -34,17 +34,17 @@
         <div class="img-portal">
 
             <h4>More</h4>
-            <p>Explore historical materials related to the history of social reform at 
+            <p>Explore historical materials related to the history of social reform at
 VCU Libraries’ Image Portal.</p>
             <a href="http://images.socialwelfare.library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?></a>
         </div>
 
         <div class="footer-creds">
             <a href="https://library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/vcu-footer-logo.svg' ); ?></a>
-        
+
             <p class="last-modified"><small>Last modified: <?php the_modified_time( 'F j, Y' ); ?></small></p>
 
-            <p><small>Contact us: <a href="mailto:LibSWHP@vcu.edu">LibSWHP@vcu.edu</a></small></p>
+            <p><small>Contact us: <a class="contact-us-link" href="mailto:LibSWHP@vcu.edu">LibSWHP@vcu.edu</a></small></p>
 
             <p class="editor-login"><small><a href="<?php echo esc_url( admin_url() ); ?>">Editor Login</a></small></p>
         </div>
@@ -54,7 +54,7 @@ VCU Libraries’ Image Portal.</p>
 
 <footer class="bottom-footer">
     <div class="inner-footer">
-    
+
         <ul>
             <li><a href="http://vcu.edu">Virginia Commonwealth University</a></li>
             <li><a href="https://library.vcu.edu">VCU Libraries</a></li>
