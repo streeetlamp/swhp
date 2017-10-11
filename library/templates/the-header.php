@@ -12,4 +12,4 @@ get_header(); ?>
 
   <div class="inner-content">
 
-    <main class="main">
+    <main class="main" id="main" tabindex="-1">

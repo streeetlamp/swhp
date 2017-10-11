@@ -54,6 +54,8 @@
 
     <div class="container">
 
+      <a class="skip-main" href="#main">Skip to main content</a>
+
       <header class="header">
 
         <div class="inner-header">
