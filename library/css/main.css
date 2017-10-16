@@ -1259,17 +1259,16 @@ SLIDER STYLES
   .slider-dots-wrap li {
     display: inline-block;
     margin-right: 10px; }
-    .slider-dots-wrap li a {
-      border: none;
+    .slider-dots-wrap li span {
       color: #fff;
-      outline: none;
       opacity: .45; }
-      .slider-dots-wrap li a:hover {
+      .slider-dots-wrap li span:hover, .slider-dots-wrap li span:focus {
+        cursor: pointer;
         color: #0966a9;
         opacity: 1; }
     .slider-dots-wrap li:last-child {
       margin: 0; }
-    .slider-dots-wrap li.slider-dot-current a {
+    .slider-dots-wrap li.slider-dot-current span {
       opacity: 1; }
 
 .flex-2-col .slider-dots-wrap {
