@@ -721,7 +721,8 @@ a, a:visited {
   .image-portal-banner:after {
     clear: both; }
   .image-portal-banner ul li {
-    display: inline-block; }
+    display: inline-block;
+    color: #fff; }
   .image-portal-banner svg {
     width: 3rem;
     vertical-align: middle;
@@ -732,7 +733,7 @@ a, a:visited {
     @media (min-width: 769px) {
       .image-portal-banner p {
         text-align: left;
-        width: 65.5172413793%;
+        width: 56.8965517241%;
         float: left;
         margin-right: 3.4482758621%;
         display: inline-block; } }
@@ -752,8 +753,11 @@ a, a:visited {
         float: right;
         margin-right: 0; } }
     .image-portal-banner a:hover, .image-portal-banner a:focus {
-      background: #fff;
-      color: #000; }
+      background: #fff; }
+      .image-portal-banner a:hover ul li, .image-portal-banner a:focus ul li {
+        color: #000; }
+        .image-portal-banner a:hover ul li .st7, .image-portal-banner a:focus ul li .st7 {
+          fill: #000 !important; }
 
 .featured-item a {
   text-decoration: none; }

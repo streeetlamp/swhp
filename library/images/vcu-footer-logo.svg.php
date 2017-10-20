@@ -1,4 +1,4 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 47.02">
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 47.02">
   <defs>
     <style>
       .cls-666{fill:none;}.cls-222{fill:#fff;}.cls-3{fill:#f7a800;}.cls-4{fill:#231f20;}.cls-5{clip-path:url(#clip-path);}

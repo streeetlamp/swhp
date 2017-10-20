@@ -25,7 +25,7 @@
         <?php if ( $excerpt || $headline || $link ) : ?>
         <div class="slide-excerpt-wrap">
             <div class="slide-inner">
-                <h1 class="slide-headline"><?php echo $headline; ?></h1>
+                <h2 class="slide-headline"><?php echo $headline; ?></h2>
                 <div class="slide-excerpt"><?php echo $excerpt; ?></div><?php if ( $link ) : ?><div class="slide-button"><a href="<?php echo $link; ?>">Learn More</a></div><?php endif; ?>
             </div>
         </div>
