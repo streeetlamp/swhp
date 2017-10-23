@@ -688,6 +688,9 @@ p.logged-in-as {
   .cat-archive-wrap:after {
     clear: both; }
 
+iframe {
+  max-width: 100% !important; }
+
 /*********************
 LINK STYLES
 *********************/
