@@ -33,7 +33,7 @@
 
         <div class="img-portal">
 
-            <h4>More</h4>
+            <h4 class="no-margin">More</h4>
             <p>Explore historical materials related to the history of social reform at
 VCU Libraries’ Image Portal.</p>
             <a href="http://images.socialwelfare.library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?></a>
@@ -45,6 +45,12 @@ VCU Libraries’ Image Portal.</p>
             <p class="last-modified"><small>Last modified: <?php the_modified_time( 'F j, Y' ); ?></small></p>
 
             <p><small>Contact us: <a class="contact-us-link" href="mailto:LibSWHP@vcu.edu">LibSWHP@vcu.edu</a></small></p>
+
+            <?php
+            if ( shortcode_exists( 'jetpack_subscription_form' ) ) {
+                echo do_shortcode( '[jetpack_subscription_form title="Subscribe for Updates" subscribe_text="Enter your email address to subscribe and receive notifications of new updates by email."]' );
+            }
+            ?>
 
             <p class="editor-login"><small><a href="<?php echo esc_url( admin_url() ); ?>">Editor Login</a></small></p>
         </div>

@@ -407,6 +407,9 @@ MIXINS
   position: absolute;
   margin-left: -9999px; }
 
+.no-margin {
+  margin: 0; }
+
 /*********************
 GRID
 *********************/
@@ -470,6 +473,8 @@ main.main {
     display: table; }
   main.main:after {
     clear: both; }
+  main.main:focus {
+    outline: none; }
 
 .inner-content, .inner-footer, .inner-header {
   width: 100%;
@@ -612,18 +617,6 @@ div[id^='azindex-'] {
   padding-left: 40px;
   font-size: .85em; }
 
-.comment-author a {
-  text-decoration: none; }
-
-.comment-metadata a {
-  color: #555;
-  text-decoration: none; }
-
-a.comment-reply-link {
-  text-decoration: none;
-  color: #555;
-  font-size: .85em; }
-
 .comment-reply-title {
   margin-top: 40px;
   margin-bottom: 0; }
@@ -690,6 +683,26 @@ p.logged-in-as {
 
 iframe {
   max-width: 100% !important; }
+
+.commentlist li + li {
+  margin-top: 20px; }
+
+.commentlist a.comment-reply-link {
+  text-decoration: none;
+  color: #555; }
+  .commentlist a.comment-reply-link:hover, .commentlist a.comment-reply-link:focus {
+    text-decoration: underline; }
+
+.commentlist .comment-author a {
+  text-decoration: none; }
+  .commentlist .comment-author a:hover, .commentlist .comment-author a:focus {
+    text-decoration: underline; }
+
+.commentlist .comment-metadata a {
+  color: #555;
+  text-decoration: none; }
+  .commentlist .comment-metadata a:hover, .commentlist .comment-metadata a:focus {
+    text-decoration: underline; }
 
 /*********************
 LINK STYLES
@@ -1148,6 +1161,16 @@ FOOTER
   text-decoration: underline !important; }
   .contact-us-link:hover {
     text-decoration: none !important; }
+
+.jetpack_subscription_widget .widgettitle {
+  font-size: 1em; }
+
+.jetpack_subscription_widget p {
+  font-size: 75%; }
+
+.jetpack_subscription_widget input {
+  border: none;
+  padding: 5px 7px; }
 
 /******************************************************************
 SEARCH STYLES

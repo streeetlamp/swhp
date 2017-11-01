@@ -11,9 +11,9 @@
  */
 function bones_head_cleanup() {
 	// category feeds
-	remove_action( 'wp_head', 'feed_links_extra', 3 );
+	// remove_action( 'wp_head', 'feed_links_extra', 3 );
 	// post and comment feeds
-	remove_action( 'wp_head', 'feed_links', 2 );
+	// remove_action( 'wp_head', 'feed_links', 2 );
 	// EditURI link
 	remove_action( 'wp_head', 'rsd_link' );
 	// windows live writer
