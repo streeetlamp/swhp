@@ -117,8 +117,6 @@ function bones_scripts_and_styles() {
 
         // livereload for development
        wp_register_script( 'bones-livereload', '//localhost:35729/livereload.js', array(), '', true );
-        // html5 shiv
-       wp_register_script( 'bones-html5-shiv', '//html5shiv.googlecode.com/svn/trunk/html5.js', array(), '' );
         // font awesome
        wp_register_style( 'bones-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '' );
 
@@ -135,12 +133,18 @@ function bones_scripts_and_styles() {
       wp_enqueue_style( 'bones-font-awesome' );
       wp_enqueue_script( 'jquery' );
       wp_enqueue_script( 'branding-bar' );
-
-        // add conditional wrapper around html5 shiv
-      $wp_scripts->add_data( 'bones-html5-shiv', 'conditional', 'lt IE 9' );
-      wp_enqueue_script( 'bones-html5-shiv' );
     }
 }
+
+
+add_filter( 'script_loader_tag', function ( $tag, $handle ) {
+
+    if ( 'branding-bar' === $handle ) {
+        return str_replace( ' src', ' async src', $tag );
+    }
+    return $tag;
+
+}, 10, 2 ); 
 
 /**
  * THEME SUPPORT

@@ -38,14 +38,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title( '' ); ?></title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- NEED A favicon made -->
     <link rel="icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.png' ); ?>">
     <!--[if IE]>
       <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico' ); ?>">
     <![endif]-->
-
     <?php wp_head(); ?>
 
   </head>
