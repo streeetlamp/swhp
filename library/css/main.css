@@ -498,7 +498,13 @@ main.main {
     clear: both; }
 
 .featured-items {
-  text-align: center; }
+  text-align: center;
+  zoom: 1; }
+  .featured-items:before, .featured-items:after {
+    content: "";
+    display: table; }
+  .featured-items:after {
+    clear: both; }
 
 hr {
   outline: none;
