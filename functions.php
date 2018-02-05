@@ -92,9 +92,7 @@ add_action( 'customize_register', 'bones_theme_customizer' );
  */
 function we_are_live() {
   $host = home_url();
-  //remove
-  return false;
-  //remove
+  
   if ( preg_match( '/\.test/', $host ) ) {
 		return false;
   }
