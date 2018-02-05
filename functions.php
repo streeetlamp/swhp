@@ -92,8 +92,10 @@ add_action( 'customize_register', 'bones_theme_customizer' );
  */
 function we_are_live() {
   $host = home_url();
-
-  if ( preg_match( '/\.dev/', $host ) ) {
+  //remove
+  return false;
+  //remove
+  if ( preg_match( '/\.test/', $host ) ) {
 		return false;
   }
   return true;
