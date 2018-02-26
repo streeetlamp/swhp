@@ -19,7 +19,7 @@ require_once( 'library/inc/disable-trackbacks.php' );
  * LAUNCH BONES
  */
 function bones_ahoy() {
-
+  @ini_set( 'upload_max_size' , '64M' );
   /** Allow editor style.
   add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' ); */
 
@@ -143,6 +143,16 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 			  );
 
 }
+
+//since WP wont just give a alt tag
+function get_the_post_thumbnail_alt( $post_id ) {
+  return get_post_meta( get_post_thumbnail_id( $post_id ), '_wp_attachment_image_alt', true );
+}
+
+function the_post_thumbnail_alt( $post_id ) {
+  echo get_the_post_thumbnail_alt( $post_id) ;
+}
+
 
 // Hide ACF from admin menu if live
 if ( we_are_live() ) {
