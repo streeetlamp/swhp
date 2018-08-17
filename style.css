@@ -5,7 +5,7 @@ Description: WordPress Theme for the Social Welfare History Project
 Author: VCU Libraries Digital Engagement
 Author URI: http://library.vcu.edu
 Tags: fluid-layout, responsive-layout, accessibility-ready
-Version: 1.1.20
+Version: 1.1.21
 
 GitHub Theme URI: https://github.com/streeetlamp/swhp
 
@@ -18,7 +18,7 @@ License URI: http://sam.zoy.org/wtfpl/
 .bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
 .wp-caption {}
 .wp-caption-text {}
-.screen-reader-text {} 
-.alignleft {} 
-.alignright {} 
+.screen-reader-text {}
+.alignleft {}
+.alignright {}
 .aligncenter {} /* THANK YOU */
