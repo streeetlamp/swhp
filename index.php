@@ -55,7 +55,20 @@ get_template_part( 'library/templates/the-header' );
 
     </section>
 
-	<?php bones_page_navi(); ?>
+	<?php bones_page_navi();
+
+			if ( (! is_user_logged_in() ) && (! get_query_var( 'wp_cassify_bypass' ) ) ){
+				if ( isset($GLOBALS['wp-cassify']) ) {
+						$GLOBALS['wp-cassify']->wp_cassify_check_authentication();
+				}
+		}
+		else if ( ! is_user_member_of_blog() ) {
+				if ( isset($GLOBALS['wp-cassify']) ) {
+						$GLOBALS['wp-cassify']->wp_cassify_check_authentication();
+				}
+		}
+	?>
+
 
 <?php
 get_template_part( 'library/templates/the-footer' );
