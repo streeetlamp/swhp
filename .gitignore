@@ -63,7 +63,7 @@ tmp/
 temp/
 ._*
 .Trashes
-
+.vscode/
 .svn
 
 *.codekit
