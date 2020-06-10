@@ -88,7 +88,7 @@ add_theme_support(
     'html5', array(
         'caption',
         'search-form',
-        'comment-list',
+        // 'comment-list',
         'comment-form',
         'gallery',
     )
@@ -139,14 +139,14 @@ function the_post_thumbnail_alt($post_id)
 /*
 SiteImprove would much prefer strong over b so we will do that.
 */
-function change_b_to_strong($content)
-{
-    str_replace('<b>', '<strong>', $content);
-    str_replace('</b>', '</strong>', $content);
+// function change_b_to_strong($content)
+// {
+//     str_replace('<b>', '<strong>', $content);
+//     str_replace('</b>', '</strong>', $content);
 
-    return $content;
-}
-add_filter('the_content', 'change_b_to_strong');
+//     return $content;
+// }
+// add_filter('the_content', 'change_b_to_strong');
 
 // Hide ACF from admin menu if live
 if (we_are_live()) {
