@@ -88,7 +88,7 @@ add_theme_support(
     'html5', array(
         'caption',
         'search-form',
-        // 'comment-list',
+        'comment-list',
         'comment-form',
         'gallery',
     )
