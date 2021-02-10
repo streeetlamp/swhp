@@ -475,17 +475,25 @@ main.main {
   main.main:focus {
     outline: none; }
 
-.inner-content, .inner-footer, .inner-header {
+.inner-content,
+.inner-footer,
+.inner-header {
   width: 100%;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   zoom: 1;
   padding: 0 40px; }
-  .inner-content:before, .inner-content:after, .inner-footer:before, .inner-footer:after, .inner-header:before, .inner-header:after {
+  .inner-content:before, .inner-content:after,
+  .inner-footer:before,
+  .inner-footer:after,
+  .inner-header:before,
+  .inner-header:after {
     content: "";
     display: table; }
-  .inner-content:after, .inner-footer:after, .inner-header:after {
+  .inner-content:after,
+  .inner-footer:after,
+  .inner-header:after {
     clear: both; }
 
 .entry-content {
@@ -544,15 +552,18 @@ img {
   max-width: 100%;
   height: auto; }
 
-figure.alignright, img.alignright {
+figure.alignright,
+img.alignright {
   float: right;
   margin: 0 0 1em 1.5em; }
 
-figure.alignleft, img.alignleft {
+figure.alignleft,
+img.alignleft {
   float: left;
   margin: 0 1.5em 1em 0; }
 
-figure.aligncenter, img.aligncenter {
+figure.aligncenter,
+img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -585,7 +596,8 @@ figure.aligncenter, img.aligncenter {
 .author {
   font-size: .80em;
   color: #555; }
-  .author a, .author a:visited {
+  .author a,
+  .author a:visited {
     color: #555; }
 
 .category-meta {
@@ -692,11 +704,12 @@ iframe {
   max-width: 100% !important; }
 
 .commentlist li + li {
-  margin-top: 20px; }
+  margin-top: 30px;
+  padding-left: 20px;
+  border-left: 1px solid #f0e6e6; }
 
 .commentlist a.comment-reply-link {
-  text-decoration: none;
-  color: #555; }
+  display: none !important; }
   .commentlist a.comment-reply-link:hover, .commentlist a.comment-reply-link:focus {
     text-decoration: underline; }
 
@@ -710,6 +723,11 @@ iframe {
   text-decoration: none; }
   .commentlist .comment-metadata a:hover, .commentlist .comment-metadata a:focus {
     text-decoration: underline; }
+
+.reply {
+  display: none !important; }
+  .reply a.comment-reply-login {
+    display: none !important; }
 
 /*********************
 LINK STYLES
