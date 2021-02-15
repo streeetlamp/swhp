@@ -19,9 +19,6 @@ if (post_password_required()) {
 
 <div id="comments" class="comments-area">
 
-	<?php
-	if (have_comments()) :
-	?>
 		<h3 class="comments-title">
 			<?php
 			$comments_number = get_comments_number();
@@ -59,14 +56,8 @@ if (post_password_required()) {
 			'next_text' => '<span class="screen-reader-text">' . __('Next', 'bonestheme') . '</span>',
 		));
 
-	endif; // Check for have_comments().
 
-	// If comments are closed and there are comments, let's leave a little note, shall we?
-	if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) :
-	?>
 
-	<?php
-	endif;
 
 	// comment_form();
 	?>
