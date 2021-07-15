@@ -906,7 +906,6 @@ HEADER STYLES
       background: #f4f4f4;
       border: none;
       padding: 10px 15px;
-      width: calc(100% - 40px);
       font-size: .8em; }
     .inner-header .search button {
       background: none;
@@ -924,7 +923,7 @@ HEADER STYLES
         width: 48.275862069%;
         float: right;
         margin-right: 0;
-        top: 45px;
+        top: 1.5vw;
         right: 0; }
         .inner-header .search input {
           width: 50%; }
@@ -940,6 +939,24 @@ HEADER STYLES
   margin-bottom: 40px; }
   .featured-header h3 {
     margin: 5px 0; }
+
+.giving_link {
+  width: 39.6551724138%;
+  float: right;
+  margin-right: 0;
+  display: inline-block;
+  color: white;
+  padding: .75rem;
+  background-color: #0966a9;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  text-decoration: none; }
+  .giving_link:hover {
+    background-color: #053a60;
+    color: white; }
+  @media (min-width: 0) and (max-width: 768px) {
+    .giving_link {
+      display: none; } }
 
 /*********************
 NAVIGATION STYLES

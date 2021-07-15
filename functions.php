@@ -76,7 +76,7 @@ function we_are_live()
 {
     $host = home_url();
 
-    if (preg_match('/\.test/', $host)) {
+    if (preg_match('/\.local/', $host)) {
         return false;
     }
 
