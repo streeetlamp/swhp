@@ -59,7 +59,7 @@
 
           <h1 id="logo" aria-label="VCU Libraries' Social Welfare History Project"><a href="<?php echo esc_url( home_url() ); ?>" rel="nofollow"><?php get_template_part( 'library/images/logo.svg' ); ?></a></h1>
 
-          <a class="giving_link" href="https://www.support.vcu.edu/give/vculibrariesmakeagift?des=160096">Donate to the Social Welfare History Project</a>
+          <a class="giving_link" href="https://www.support.vcu.edu/give/vculibrariesmakeagift?des=160096">Give Now</a>
 
           <?php get_search_form(); ?>
 

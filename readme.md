@@ -2,15 +2,23 @@
 ---
 ## Getting Started
 
-### Vagrant
-#### 	[Varying Vagrant Vagrants](https://varyingvagrantvagrants.org/)
+### Local
+#### 	[Local](http://localwp.com/?download)
 
-> Varying Vagrant Vagrants is an open source Vagrant configuration focused on WordPress development. VVV is ideal for developing themes and plugins as well as for contributing to WordPress core.
+> Local Development Environment for WordPress. Build, test and deploy sites faster with the #1 WordPress local development tool.
 
-This vagrant config is highly recommended.
+#### How to connect Local to WP Engine.
+##### Download Local
 
-*cody needs to write more here about why and how to vagrant*
+Get started by [downloading Local](http://localwp.com/?download) for free. It is available for Mac, Windows, and Linux (including Debian and RPM based distros).
 
+##### Connect with WP Engine.
+
+Navigate to the Connect tab to log in with your WP Engine account.
+
+##### Deploy your local sites to staging and production.
+
+Once connected, you can push local sites up your staging or production sites, or easily pull a copy of a live site to local environment for offline editing!
 
 ```bash
 npm install
