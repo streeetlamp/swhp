@@ -94,7 +94,7 @@
                 </p>
             </div>
             <div class="swhp-giving-banner--col">
-                <a class="swhp-giving-banner--button">Give Now</a>
+                <a href="https://www.support.vcu.edu/give/vculibrariesmakeagift?des=160096" class="swhp-giving-banner--button">Give Now</a>
             </div>
         </div>
         <!-- giving banner end -->
