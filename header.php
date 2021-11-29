@@ -58,10 +58,12 @@
         <div class="inner-header">
 
           <h1 id="logo" aria-label="VCU Libraries' Social Welfare History Project"><a href="<?php echo esc_url( home_url() ); ?>" rel="nofollow"><?php get_template_part( 'library/images/logo.svg' ); ?></a></h1>
-
+          <!-- header giving button
           <a class="giving_link" href="https://www.support.vcu.edu/give/vculibrariesmakeagift?des=160096">Give Now</a>
-
+          -->
           <?php get_search_form(); ?>
+
+          <a href="//www.support.vcu.edu/give/vculibrariesmakeagift?des=160096">Give To The SWHP</a>
 
           <button class="js-mobile-nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
 
@@ -83,5 +85,17 @@
           </nav>
 
         </div>
-
+        <!--giving banner -->
+        <div class="swhp-giving-banner">
+            <div class="swhp-giving-banner--col">
+                <p>
+                    <strong><span class="swhp-giving-banner--text__big">Your support helps VCU Libraries make the Social Welfare History Project freely available to all.</span></strong><br>
+                    A generous challenge grant will double your impact.
+                </p>
+            </div>
+            <div class="swhp-giving-banner--col">
+                <a class="swhp-giving-banner--button">Give Now</a>
+            </div>
+        </div>
+        <!-- giving banner end -->
       </header>

@@ -963,6 +963,47 @@ HEADER STYLES
     .giving_link {
       display: none; } }
 
+.swhp-giving-banner {
+  background-color: #F7A800;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 20px; }
+
+.swhp-giving-banner--col {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .swhp-giving-banner--col p {
+    margin: 0 2rem 0 7vw;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    padding: 1rem 0; }
+
+.swhp-giving-banner--text__big {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3; }
+
+.swhp-giving-banner--button {
+  display: block;
+  padding: .75rem 3rem;
+  border-radius: 5px;
+  background-color: #000;
+  color: #FFF;
+  margin: 0 7vw 0 2rem;
+  max-width: 200px;
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .swhp-giving-banner {
+    grid-template-columns: auto; }
+  .swhp-giving-banner--button {
+    max-width: 100%;
+    margin: 0 7vw 1rem; } }
+
 /*********************
 NAVIGATION STYLES
 *********************/
