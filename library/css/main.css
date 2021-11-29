@@ -996,6 +996,8 @@ HEADER STYLES
   margin: 0 7vw 0 2rem;
   max-width: 200px;
   text-align: center; }
+  .swhp-giving-banner--button:visited {
+    color: #FFF; }
 
 @media (max-width: 767px) {
   .swhp-giving-banner {
