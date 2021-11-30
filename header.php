@@ -63,8 +63,6 @@
           -->
           <?php get_search_form(); ?>
 
-          <a href="//www.support.vcu.edu/give/vculibrariesmakeagift?des=160096">Give To The SWHP</a>
-
           <button class="js-mobile-nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
 
           <nav class="nav">
