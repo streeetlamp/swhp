@@ -58,9 +58,9 @@
         <div class="inner-header">
 
           <h1 id="logo" aria-label="VCU Libraries' Social Welfare History Project"><a href="<?php echo esc_url( home_url() ); ?>" rel="nofollow"><?php get_template_part( 'library/images/logo.svg' ); ?></a></h1>
-          <!-- header giving button
+          <!-- header giving button -->
           <a class="giving_link" href="https://www.support.vcu.edu/give/vculibrariesmakeagift?des=160096">Give Now</a>
-          -->
+          <!-- header giving button end -->
           <?php get_search_form(); ?>
 
           <button class="js-mobile-nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
@@ -83,7 +83,7 @@
           </nav>
 
         </div>
-        <!--giving banner -->
+        <!--giving banner 
         <div class="swhp-giving-banner">
             <div class="swhp-giving-banner--col">
                 <p>
@@ -95,5 +95,5 @@
                 <a href="https://www.support.vcu.edu/give/vculibrariesmakeagift?des=160096" class="swhp-giving-banner--button">Give Now</a>
             </div>
         </div>
-        <!-- giving banner end -->
+        giving banner end -->
       </header>
