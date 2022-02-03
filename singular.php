@@ -45,7 +45,7 @@ while (
         endwhile;
         endif;
 
-        if ( comments_open() && is_single() || get_comments_number() && is_single() ) :
+        if ( is_single() ) :
             comments_template();
         endif;
         ?>
