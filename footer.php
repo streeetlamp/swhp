@@ -19,7 +19,7 @@
 					 'container' => false,                         // remove nav container
 		             'container_class' => 'menu',                 // class of container (should you choose to use it)
 		             'menu' => __( 'The Footer Menu', 'bonestheme' ),  // nav name
-		             'menu_class' => 'footer-nav',               // adding custom nav class
+		            //  'menu_class' => 'footer-nav',               // adding custom nav class
 		             'theme_location' => 'footer-nav',                 // where it's located in the theme
 		             'before' => '',                                 // before the menu
 		             'after' => '',                                  // after the menu
