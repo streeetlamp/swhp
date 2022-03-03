@@ -149,6 +149,6 @@ SiteImprove would much prefer strong over b so we will do that.
 // add_filter('the_content', 'change_b_to_strong');
 
 // Hide ACF from admin menu if live
-if (we_are_live()) {
-    add_filter('acf/settings/show_admin', '__return_false');
-}
+// if (we_are_live()) {
+//     add_filter('acf/settings/show_admin', '__return_false');
+// }
