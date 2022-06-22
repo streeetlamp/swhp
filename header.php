@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Author: VCU Libraries Digital Engagement
  * URL: https://library.vcu.edu
@@ -7,7 +8,6 @@
  */
 
 ?>
-
 <!doctype html lang="mul">
 <!--
  ______  _________ _______ __________________ _______  _
@@ -83,7 +83,7 @@
           </nav>
 
         </div>
-        <!--giving banner 
+        <!--giving banner
         <div class="swhp-giving-banner">
             <div class="swhp-giving-banner--col">
                 <p>
