@@ -418,11 +418,7 @@ TYPE
 p {
   line-height: 1.65;
   word-wrap: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto; }
+  word-break: break-word; }
 
 /*********************
 BUTTONS
