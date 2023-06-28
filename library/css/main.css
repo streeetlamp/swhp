@@ -416,9 +416,7 @@ GRID
 TYPE
 *********************/
 p {
-  line-height: 1.65;
-  word-wrap: break-word;
-  word-break: break-word; }
+  line-height: 1.65; }
 
 /*********************
 BUTTONS
