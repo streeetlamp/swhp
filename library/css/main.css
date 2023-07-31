@@ -1005,6 +1005,9 @@ HEADER STYLES
     max-width: 100%;
     margin: 0 7vw 1rem; } }
 
+.vcu-branding-bar__container .vcu-branding-bar__link-wrap {
+  margin-top: 0 !important; }
+
 /*********************
 NAVIGATION STYLES
 *********************/

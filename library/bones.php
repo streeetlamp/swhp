@@ -122,10 +122,10 @@ function bones_scripts_and_styles() {
 
         // check environment before outputting appropriate stylesheet
        if ( we_are_live() ) {
-			wp_enqueue_style( 'bones-stylesheet-min' );
+			wp_enqueue_style( 'bones-stylesheet-min', array(), wp_get_theme()->get( 'Version' ), 'all' );
 			wp_enqueue_script( 'bones-js-min' );
       } else {
-			wp_enqueue_style( 'bones-stylesheet' );
+			wp_enqueue_style( 'bones-stylesheet', array(), wp_get_theme()->get( 'Version' ), 'all');
 			wp_enqueue_script( 'bones-js' );
 			wp_enqueue_script( 'bones-livereload' );
       }
