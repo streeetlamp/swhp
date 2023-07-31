@@ -65,6 +65,9 @@ VCU Libraries’ Image Portal.</p>
             <li><a href="https://library.vcu.edu">VCU Libraries</a></li>
             <li><a href="https://www.library.vcu.edu/services/accessibility/">Accessibility</a></li>
             <li><a href="https://www.library.vcu.edu/about/guidelines/copyright-privacy/">VCU Libraries Copyright and Privacy</a></li>
+            <li>901 Park Ave., Box 842033 Richmond, VA 23284-2033</li>
+            <li>Toll-free: (844) 352-7399</li>
+            <li>Local: (804) 828-1111</li>
         </ul>
     </div>
 </footer>
