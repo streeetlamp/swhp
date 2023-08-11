@@ -34,8 +34,7 @@
         <div class="img-portal">
 
             <h4 class="no-margin">More</h4>
-            <p>Explore historical materials related to the history of social reform at
-VCU Libraries’ Image Portal.</p>
+            <p>Explore historical materials related to social reform and social welfare through the Image Portal.</p>
             <a href="http://images.socialwelfare.library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?></a>
         </div>
 
