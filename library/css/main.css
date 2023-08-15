@@ -1212,6 +1212,11 @@ FOOTER
       width: 31.0344827586%;
       float: left;
       margin-right: 3.4482758621%; } }
+  .img-portal p {
+    -webkit-hyphens: none;
+       -moz-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none; }
   .img-portal a {
     display: inline-block; }
   .img-portal svg {
