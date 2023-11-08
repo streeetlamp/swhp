@@ -36,6 +36,9 @@
             <h4 class="no-margin">More</h4>
             <p>Explore historical materials related to social reform and social welfare through the Image Portal.</p>
             <a href="http://images.socialwelfare.library.vcu.edu/" class="no-border"><?php get_template_part( 'library/images/img-gallery-logo.svg' ); ?></a>
+            <h4>Sponsors</h4>
+            <p><a href="//www.mellon.org/">The Andrew W. Mellon Foundation</a><br />
+            <a href="//www.library.vcu.edu/about/news/2019-news/in-remembrance-of-jack-hansan-founder-and-guiding-light-of-the-social-welfare-history-project-and-a-cherished-supporter.html">Hansan Family Foundation</a></p>
         </div>
 
         <div class="footer-creds">
